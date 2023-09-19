@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(iMainAct_lab1)
         }
 
+        val iMainAct_lab2 = Intent(this, MainActivity_Lab2::class.java)
+        val button_nextAct_lab2: Button = findViewById(R.id.button4)
+        button_nextAct_lab2.setOnClickListener{
+            startActivity(iMainAct_lab2)
+        }
+
     }
 }
