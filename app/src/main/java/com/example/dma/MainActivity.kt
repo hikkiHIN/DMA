@@ -1,9 +1,9 @@
 package com.example.dma
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
         val button_nextAct_lab2: Button = findViewById(R.id.button4)
         button_nextAct_lab2.setOnClickListener{
             startActivity(iMainAct_lab2)
+        }
+
+        val iMainAct_lab3 = Intent(this, MainActivity_Lab3::class.java)
+        val button_nextAct_lab3: Button = findViewById(R.id.button7)
+        button_nextAct_lab3.setOnClickListener{
+            startActivity(iMainAct_lab3)
         }
 
     }
